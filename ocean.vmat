@@ -1,0 +1,94 @@
+// THIS FILE IS AUTO-GENERATED
+
+Layer0
+{
+	shader "shaders/materials/ocean/ocean.shader"
+
+	//---- Animated Normals ----
+	F_ANIMATED_NORMALS 1
+
+	//---- CS2 Fog System ----
+	F_CS2_FOG 1
+
+	//---- Disable Refraction ----
+	F_DISABLE_REFRACTION 1
+
+	//---- Edge Foam ----
+	F_FOAM 1
+
+	//---- Flow Color ----
+	F_FLOW_COLOR 1
+
+	//---- Flow Normals ----
+	F_FLOW_NORMALS 1
+
+	//---- Fresnel Effect ----
+	F_FRESNEL 1
+
+	//---- Vertex Displacement ----
+	F_VERTEX_DISPLACEMENT 1
+
+	//---- Color ----
+	ColorTexture "materials/default/default_color.tga"
+	g_flColorScale "10.000"
+	g_flModelTintAmount "1.000"
+	g_vColorTint "[1.000000 1.000000 1.000000 0.000000]"
+
+	//---- CS2 Fog ----
+	g_flCS2FogDensity "0.515"
+	g_flCS2FogHeight "211.221"
+	g_flCS2FogPower "1.766"
+	g_vCS2FogColor "[0.200000 0.400000 0.600000 1.000000]"
+
+	//---- Flow ----
+	FlowMap "decals/impact/dirt/decal_impact_dirt_01_color.png"
+	g_flFlowCycle "2.359"
+	g_flFlowLerpExp "1.000"
+	g_flFlowSpeed "0.231"
+	g_flFlowStrength "0.250"
+	g_flNoiseScale "225.644"
+	g_flNoiseStrength "0.100"
+	g_flNormalUvScale "1.000"
+	g_flWorldUvScale "0.100"
+	NoiseTexture "materials/default/default_noise.tga"
+
+	//---- Foam ----
+	FoamTexture "materials/water/water-edge-foam.png"
+	g_flFoamContrast "1.500"
+	g_flFoamDepth "200.000"
+	g_flFoamScale "182.277"
+	g_flFoamSharpness "2.093"
+	g_flFoamSpeed "0.713"
+	g_vFoamColor "[1.000000 1.000000 1.000000 1.000000]"
+
+	//---- Fog ----
+	g_bFogEnabled "1"
+
+	//---- Normals ----
+	NormalMapA "textures/water/water_normal.jpg"
+	NormalMapB "shaders/materials/ocean/water 0397cbormal.jpg"
+
+	//---- Reflection ----
+	g_flReflectance "0.505"
+
+	//---- Refraction ----
+	g_flRefractionClipPlaneAdjust "24.092"
+
+	//---- Specular ----
+	g_flReflectionPower "43.033"
+	g_vReflectionColor "[1.000000 1.000000 1.000000 0.000000]"
+	g_vReflectionDir "[0.707 0.707 0.000]"
+
+	//---- Surface ----
+	g_flGlossiness "1.000"
+	g_flMetalness "0.000"
+	g_flNormalScale "157.030"
+	g_flNormalSpeed "0.112"
+	g_flNormalStrength "0.119"
+
+	//---- Water Fog ----
+	g_flWaterDepth "317.129"
+	g_flWaterStart "35.974"
+	g_vRefractionTint "[0.400000 0.701961 0.800000 1.000000]"
+	g_vWaterFogColor "[0.000000 0.615686 1.000000 1.000000]"
+}
